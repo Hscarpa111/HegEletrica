@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEG Elétrica - Alta Performance em Painéis</title>
+  <style>
+    body {
+      background-color: #0d1011;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    .topo {
+      background: url('Fotos/banner.jpg') no-repeat center center/cover;
+      padding: 30px 20px 60px; /* Altura ajustada para ficar mais próximo do topo */
+      text-align: center;
+    }
+
+    img.logo {
+      width: 160px;
+      margin: 0 auto 10px; /* Centraliza e reduz a margem inferior */
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    img.logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #f6b600;
+      font-size: 2.5em;
+      margin: 10px 0;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover {
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 1.2em;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn {
+      background-color: #f6b600;
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 20px auto;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffd700;
+      transform: scale(1.05);
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      background-color: #121a1c;
+    }
+
+    .galeria img {
+      width: 320px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #f6b60077;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #aaa;
+      font-size: 0.9em;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+
+    footer:hover {
+      color: #ddd;
+    }
+
+    .orcamento {
+      background: #0d1011;
+      padding: 50px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .orcamento h2 {
+      font-size: 1.8em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+    }
+
+    .destaque-amarelo {
+      color: #f6b600;
+      font-weight: bold;
+    }
+
+    .destaque-branco {
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-amarelo {
+      background-color: #f6b600;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-amarelo:hover {
+      background-color: #ffd700;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #f6b60088;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção principal com fundo e logo -->
+  <section class="topo">
+    <img src="Fotos/logo.png" class="logo">
+
+    <h1>Painéis Elétricos Certificados</h1>
+    <p>Projetados para Alta Performance Industrial</p>
+    <button class="btn" onclick="document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' })">
+      Solicite seu Orçamento
+    </button>
+  </section>
+
+  <!-- Sobre a Empresa -->
+  <section style="background-color: #121a1c; padding: 40px 20px; text-align: center;">
+    <h2 style="color: #f6b600; font-size: 2em; margin-bottom: 20px;">Sobre a HEG Elétrica</h2>
+    <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: #ddd;">
+      A <strong>HEG Elétrica</strong> é uma empresa jovem no mercado, mas que já nasce com o compromisso de oferecer qualidade, segurança e alta performance em cada projeto. 
+      Trabalhamos com dedicação para entregar <strong>painéis elétricos certificados</strong>, projetados para atender as necessidades industriais mais exigentes. 
+      Nossa missão é crescer junto com nossos clientes, fornecendo soluções confiáveis e eficientes.
+    </p>
+  </section>
+
+  <!-- Galeria -->
+  <div class="galeria">
+    <img src="Fotos/painel1.jpeg" alt="Painel elétrico 1" />
+    <img src="Fotos/painel2.jpeg" alt="Painel elétrico 2" />
+    <img src="Fotos/painel3.jpeg" alt="Painel elétrico 3" />
+    <img src="Fotos/painel4.jpeg" alt="Painel elétrico 4" />
+  </div>
+
+  <!-- Seção de orçamento com botão do WhatsApp -->
+  <section class="orcamento" id="formulario">
+    <h2>Não espere mais, seja também um <span class="destaque-amarelo">case de sucesso</span><br />
+      e experimente o que é ter <span class="destaque-branco">qualidade e segurança</span> para sua empresa.
+    </h2>
+
+    <a href="https://wa.me/5516988319219?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20de%20painel%20elétrico"
+       target="_blank" 
+       style="text-decoration: none;">
+      <button class="btn-amarelo">
+        Solicitar orçamento via WhatsApp
+      </button>
+    </a>
+  </section>
+
+  <!-- Redes sociais com ícones arredondados -->
+  <div style="background-color: #0d1011; text-align: center; padding: 30px;">
+    <div style="display: flex; justify-content: center; gap: 15px;">
+      <a href="https://wa.me/5516988319219" target="_blank" style="background-color: #fff; border-radius: 12px; padding: 10px;">
+        <img src="https://img.icons8.com/ios-filled/24/000000/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.instagram.com/heg.eletrica" target="_blank" style="background-color: #fff; border-radius: 12px; padding: 10px;">
+        <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" />
+      </a>
+      <a href="https://www.linkedin.com/in/heg-el%C3%A9trica-33057236a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+         target="_blank" style="background-color: #fff; border-radius: 12px; padding: 10px;">
+        <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; 2025 HEG Elétrica - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
